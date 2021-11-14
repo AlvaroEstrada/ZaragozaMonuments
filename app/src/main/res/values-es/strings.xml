@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Monumentos Zaragoza</string>
+    <string name="home_map">Mapa</string>
+    <string name="home_monuments">Monumentos</string>
+
+    <string name="request_permissions">Por favor, vaya a ajustes y active el permiso de localización.</string>
+    <string name="http_error">Ha ocurrido un error recuperando la información.</string>
+    <string name="main_retrieve_info">Recuperando información</string>
+    <string name="cluster_more_info">Ver más información</string>
+    <string name="main_menu_button_text">Menu</string>
+    <string name="main_menu_monuments_list_text">Lista de monumentos</string>
+    <string name="main_menu_show_markers_text">Mostrar marcadores</string>
+    <string name="main_menu_hide_markers_text">Ocultar marcadores</string>
+    <string name="generic_close">Cerrar</string>
+    <string name="generic_locate">Localizar</string>
+
+    <!-- Fragment Details -->
+    <string name="fragment_details_description_head">Descripción:</string>
+    <string name="fragment_details_schedule_head">Horario:</string>
+
+</resources>
