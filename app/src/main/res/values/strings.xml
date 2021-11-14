@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Zaragoza Monuments</string>
+    <string name="home_map">Map</string>
+    <string name="home_monuments">Monuments</string>
+
+    <string name="request_permissions">Please go to settings and activate the localization permission.</string>
+    <string name="http_error">An error has occurred retrieving the information.</string>
+    <string name="main_retrieve_info">Retrieving information</string>
+    <string name="cluster_more_info">See more information</string>
+    <string name="main_menu_button_text">Menu</string>
+    <string name="main_menu_monuments_list_text">List of monuments</string>
+    <string name="main_menu_show_markers_text">Show markers</string>
+    <string name="main_menu_hide_markers_text">Hide markers</string>
+    <string name="generic_close">Close</string>
+    <string name="generic_locate">Locate</string>
+
+    <!-- Fragment Details -->
+    <string name="fragment_details_description_head">Description:</string>
+    <string name="fragment_details_schedule_head">Schedule:</string>
+
 </resources>

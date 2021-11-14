@@ -4,15 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.view.MainActivity">
 
-    <TextView
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/menuFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="end"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="@dimen/margin_default"
+        android:backgroundTint="@color/zgz_red_dark"
+        android:text="@string/main_menu_button_text"
+        android:textColor="@color/white"
+        app:icon="@drawable/main_menu_icon"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menuShowMarkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:backgroundTint="@color/zgz_red_dark"
+        android:contentDescription="@string/app_name"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/menuFab"
+        app:layout_constraintStart_toStartOf="@+id/menuFab"
+        app:srcCompat="@drawable/markers_selector"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/menuShowMarkersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_min"
+        android:text="@string/main_menu_hide_markers_text"
+        android:textColor="@color/zgz_red_dark"
+        android:background="@drawable/main_menu_text_background"
+        app:layout_constraintBottom_toBottomOf="@+id/menuShowMarkers"
+        app:layout_constraintStart_toEndOf="@+id/menuShowMarkers"
+        app:layout_constraintTop_toTopOf="@+id/menuShowMarkers" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menuMomuments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:backgroundTint="@color/zgz_red_dark"
+        app:fabSize="mini"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/menuShowMarkers"
+        app:layout_constraintEnd_toEndOf="@+id/menuShowMarkers"
+        app:layout_constraintStart_toStartOf="@+id/menuShowMarkers"
+        app:srcCompat="@drawable/monuments_list_icon"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/menuMonumentsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_min"
+        android:text="@string/main_menu_monuments_list_text"
+        android:textColor="@color/zgz_red_dark"
+        android:background="@drawable/main_menu_text_background"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMomuments"
+        app:layout_constraintStart_toEndOf="@+id/menuMomuments"
+        app:layout_constraintTop_toTopOf="@+id/menuMomuments" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/black_semi_transparent_background">
+
+            <ProgressBar
+                android:layout_width="@dimen/mini_progress_bar_size"
+                android:layout_height="@dimen/mini_progress_bar_size"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="@string/main_retrieve_info"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

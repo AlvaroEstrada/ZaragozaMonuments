@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="auto_size">0dp</dimen>
+    <dimen name="monument_card_image_size">75dp</dimen>
+    <dimen name="card_height">75dp</dimen>
+    <dimen name="mini_progress_bar_size">20dp</dimen>
+    <dimen name="monument_card_locate_button_locate_size">50dp</dimen>
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_min">8dp</dimen>
+</resources>

@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="zgz_red">#FFED1909</color>
+    <color name="zgz_red_light">#FFEB4236</color>
+    <color name="zgz_red_dark">#FF700F08</color>
+
+    <color name="zgz_red_dark_a50">#80700F08</color>
+    <color name="white_a75">#BFFFFFFF</color>
+
+    <color name="black_semi_transparent_background">#80000000</color>
 </resources>
